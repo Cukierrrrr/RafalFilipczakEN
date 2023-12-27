@@ -156,10 +156,15 @@ window.addEventListener("load", function(){
             else if(l == 1){
                 d.parentElement.style.border = '2px solid whitesmoke';
                 d.parentElement.addEventListener('mouseenter', function(){
-                    d.parentElement.style.border = '2px solid #04b604';
+                    console.log(screen.width)
+                    if(screen.width>1024){
+                        d.parentElement.style.border = '2px solid #04b604';
+                    }
                 })
                 d.parentElement.addEventListener('mouseleave', function(){
-                    d.parentElement.style.border = '2px solid whitesmoke';
+                    if(screen.width>1024){
+                        d.parentElement.style.border = '2px solid whitesmoke';
+                    }
                 })
             }
         }, 70);
