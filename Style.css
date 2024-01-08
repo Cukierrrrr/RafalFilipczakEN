@@ -55,6 +55,8 @@ nav div{
     background-color: rgba(4,2,4,0.5);
     font-size: 1.6em;
     transition: 250ms;
+    opacity: 0;
+    display: none;
 }
 nav div ul{
     list-style-type: none;
