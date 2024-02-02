@@ -270,24 +270,3 @@ document.querySelector('#PDA div a').addEventListener('click', function(event){
         proba = true;
     }
 })
-// obsługa formularza
-const scriptURL = 'https://script.google.com/macros/s/AKfycbw52RYLO1hV_cW4WrPbHSRsc4szvTaILJJgPBPgWJrOACn2hyDw15nqZtdSAtxvIn9Yeg/exec'
-const form = document.getElementById('formularz');
-const prze = document.getElementById('przeslanie');
-form.addEventListener('submit', e => {
-    e.preventDefault()
-    prze.style.color = 'whitesmoke'
-    prze.innerHTML = 'Sending...';
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => {
-        prze.style.color = '#04b604'
-        prze.innerHTML = 'Your Form has been sent'
-        document.getElementsByName("email")[0].value = '';
-        document.getElementsByName("temat")[0].value = '';
-        document.getElementsByName("tresc")[0].value = '';
-    })
-    .catch(errror => {
-        prze.style.color = '#b40404'
-        prze.innerHTML = 'Sending error, try again'
-    })
-}) 
