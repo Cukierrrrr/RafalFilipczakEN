@@ -200,51 +200,20 @@ main, #kontakt{
 #kontakt{
     padding-top: 40px;
     height: auto;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 #kontakt article img{
     width: 100px;
     height: 100px;
     border-radius: 50%;
 }
-#kontakt article{
-    float: left;
-    text-align: left;
-}
 #facebook{
     clear: left;
 }
 #github{
     margin-left: 20px;
-}
-table{
-    font-size: 1.7em;
-    text-align: left;
-}
-input{
-    margin-bottom: 10px;
-    padding: 5px 14px 1px 14px;
-    font-size: 1.1em;
-    width: 90%;
-}
-input, textarea{  
-    font-family: 'Courier Prime', monospace;    
-    border: none;
-    background-color: whitesmoke;
-    border-radius: 0.2em;
-}
-textarea{
-    font-size: 1em;
-    padding: 5px 15px;
-    width: 89.7%;
-}
-#wyslij, #reset{
-    font-size: 0.8em;
-    padding: 7px 15px;
-    margin-right: 10px;
-    transition:500ms;
-    width: auto;
-    color: black;
 }
 #kontakt h2, main h2{
     font-size: 3em;
@@ -310,8 +279,8 @@ ul{
     font-weight: 400;
 }
 #kontakt article{
-    float: left;
     width: 50%;
+    text-align: center;
 }
 #frontend, #backend{
     justify-content: center;
@@ -326,7 +295,7 @@ ul{
 }
 #linki{
     display: flex;
-    justify-content: left;
+    justify-content: center;
 }
 footer{
     width: 84%;
@@ -373,20 +342,8 @@ table #przeslanie{
     #umiejetnosci li{
         font-size:1.5em ;
     }
-    table, footer{
+    footer{
         font-size: 1.5em;
-    }
-    input{
-        width: 100%;
-    }
-    textarea{
-        width: 99.5%;
-    }
-    #wyslij, #reset{
-        width: auto;
-    }
-    table  #przeslanie{
-        font-size: 1.1em;
     }
     #PDA div h3{
         margin:20px 0;
@@ -406,9 +363,6 @@ table #przeslanie{
     }
     #umiejetnosci{
         height:450px;
-    }
-    table  #przeslanie{
-        font-size: 1em;
     }
     #PDA{
         width: calc(60vw * 0.84);
@@ -449,12 +403,7 @@ table #przeslanie{
     #umiejetnosci{
         height:415px;
     }
-    footer{
-        text-align: center;
-    }
-    table  #przeslanie{
-        font-size: 1.1em;
-    }
+    
     #PDA div p, #PDA div a button{
         font-size: 1.4em;
     }
@@ -475,14 +424,6 @@ table #przeslanie{
     .xd:hover{
         color:#04b604;
     }
-    #wyslij:hover{
-        background-color: #04b604;
-        color: whitesmoke;
-    }
-    #reset:hover{
-        background-color: #b40404;
-        color: whitesmoke;
-    }
     #PDA div a button:hover{
         border: 2px #04b604 solid;
         color: #04b604;
@@ -491,9 +432,6 @@ table #przeslanie{
 @media(max-width: 1080px){
     #umiejetnosci{
         height:380px;
-    }
-    table  #przeslanie{
-        font-size: 1.02em;
     }
     #PDA div p, #PDA div a button{
         font-size: 1.3em;
@@ -562,18 +500,6 @@ table #przeslanie{
         width: 100px;
         height: 100px;
     }
-    input{
-        width: 45vw;
-    }
-    textarea{
-        width: 44.7vw;
-    }
-    #wyslij, #reset{
-        width: auto;
-    }
-    table  #przeslanie{
-        font-size: 1.15em;
-    }
     #PDA div p, #PDA div a button{
         font-size: 1.1em;
     }
@@ -586,18 +512,6 @@ table #przeslanie{
         margin-left: 12%;
         margin-right: 12%;
         width: 76%;
-    }
-    input{
-        width: 48vw;
-    }
-    textarea{
-        width: 47.7vw;
-    }
-    #wyslij, #reset{
-        width: auto;
-    }
-    table  #przeslanie{
-        font-size: 1.1em; 
     }
     #PDA{
         width: calc(70vw * 0.84);
@@ -616,18 +530,6 @@ table #przeslanie{
         margin-left: 8%;
         margin-right: 8%;
         width: 84%;
-    }
-    input{
-        width: 53vw;
-    }
-    textarea{
-        width: 52.7vw;
-    }
-    #wyslij, #reset{
-        width: auto;
-    }
-    table  #przeslanie{
-        font-size: 1.05em; 
     }
     #PDA div p, #PDA div a button{
         font-size: 1em;
@@ -684,9 +586,6 @@ table #przeslanie{
     #umiejetnosci{
         height:360px;
     }
-    table{
-        font-size: 1.4em;
-    }
     nav button, nav div , #jezyk{
         font-size: 1.4em;
     }            
@@ -710,15 +609,6 @@ table #przeslanie{
     }
 }
 @media(max-width: 590px){
-    input{
-        width: 50vw;
-    }
-    #wyslij, #reset{
-        width: auto;
-    }
-    textarea{
-        width: 49.7vw;
-    }
     #umiejetnosci{
         height:320px;
     }
@@ -733,9 +623,6 @@ table #przeslanie{
     }
     #jezyk p img, nav div img{
         height: 13px;
-    }
-    table  #przeslanie{
-        font-size: 0.9em;
     }
     #PDA div p, #PDA div a button{
         font-size: 0.95em;
@@ -764,15 +651,6 @@ table #przeslanie{
     .opis{
         font-size: 30px;
     }
-    input{
-        width: 48vw;
-    }
-    textarea{
-        width: 47.7vw;
-    }
-    #wyslij, #reset{
-        width: auto;
-    } 
     main p{
         font-size: 1.3em;
     }
@@ -787,9 +665,6 @@ table #przeslanie{
     }
     #jezyk p img, nav div img{
         height: 10px;
-    }
-    table{
-        font-size: 1.3em;
     }
     #kontakt p{
         font-size: 1.3em;
@@ -836,15 +711,6 @@ table #przeslanie{
     main p{
         font-size: 1.2em;
     }
-    input{
-        width: 48vw;
-    }
-    textarea{
-        width: 47.7vw;
-    }
-    #wyslij, #reset{
-        width: auto;
-    }
     #umiejetnosci{
         height:275px;
     }
@@ -860,9 +726,6 @@ table #przeslanie{
     }
     #jezyk p img, nav div img{
         height: 10px;
-    }
-    table{
-        font-size: 1.2em;
     }
     #PDA div p, #PDA div a button{
         font-size: 0.75em;
@@ -891,19 +754,6 @@ table #przeslanie{
     #jezyki p{
         font-size: 1em;
     }
-    input{
-        width: 44vw;
-    }
-    #wyslij, #reset{
-        width: auto;
-        padding: 10px 6px;
-    }
-    textarea{
-        width: 43.5vw;
-    }
-    input, textarea{
-        font-size: 0.8em;
-    }
     #umiejetnosci{
         height:250px;
     }
@@ -925,9 +775,6 @@ table #przeslanie{
     }
     footer{
         font-size: 1.2em;
-    }
-    table  #przeslanie{
-        font-size: 0.8em;
     }
     #PDA div p, #PDA div a button{
         font-size: 0.7em;
